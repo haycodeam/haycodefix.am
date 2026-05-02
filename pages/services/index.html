@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HayCode.am / Ծառայություններ</title>
+    <link rel="shortcut icon" href="../../weblogo/haycodeicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo"> <img src="../../weblogo/haycodeicon.png" alt=""> HayCode<span>.am</span></div>
+
+            <nav>
+                <ul>
+                    <li><a href="../../index.html" data-key="nav_home"></a></li>
+                    <li><a href="../services/index.html" data-key="nav_services"></a></li>
+                    <li><a href="../coursies/index.html" data-key="nav_courses"></a></li>
+                </ul>
+                <div class="lang-switch-mobile">
+                    <button data-lang="hy">🇦🇲</button>
+                    <button data-lang="ru">🇷🇺</button>
+                    <button data-lang="en">🇺🇸</button>
+                </div>
+            </nav>
+
+            <div class="lang-switch">
+                <button data-lang="hy">🇦🇲</button>
+                <button data-lang="ru">🇷🇺</button>
+                <button data-lang="en">🇺🇸</button>
+            </div>
+
+            <div class="menu-btn">☰</div>
+        </div>
+    </header>
+
+
+
+    <section class="service_container">
+        <h2 data-key="nav_services"></h2>
+        <div class="service_box">
+
+            <div class="service">
+                <h2 data-key="service_1">Վեբ կայքերի մշակում</h2>
+                <ul>
+                    <li data-key="li_1">Մենք ստեղծում ենք ժամանակակից վեբ կայքեր</li>
+                    <li data-key="li_2">Կառուցում ենք արագ և անվտանգ համակարգեր</li>
+                    <li data-key="li_3">Օգտագործում ենք նոր տեխնոլոգիաներ (HTML, CSS, JS, React)</li>
+                    <li data-key="li_4">Կայքերը հարմար են բոլոր սարքերի համար (responsive)</li>
+                </ul>
+                <button class="btn1" data-key="btn1">Դիմել</button>
+            </div>
+
+            <div class="service">
+                <h2 data-key="service_2">Կայքերի սպասարկում</h2>
+                <ul>
+                    <li data-key="uu_1">Մենք ստեղծում ենք գեղեցիկ և ժամանակակից ինտերֆեյսներ</li>
+                    <li data-key="uu_2">Կենտրոնանում ենք օգտագործողի հարմարավետության վրա</li>
+                    <li data-key="uu_3">Դիզայնը դարձնում ենք պարզ և հասկանալի</li>
+                    <li data-key="uu_4">Օպտիմիզացնում ենք օգտագործողի փորձը (UX)</li>
+                </ul>
+                <button class="btn1" data-key="btn1">Դիմել</button>
+            </div>
+            <div class="service">
+                <h2 data-key="service_3">UI/UX Դիզայն</h2>
+                <ul>
+                    <li data-key="wm_1">Մենք ապահովում ենք կայքի անխափան աշխատանքը</li>
+                    <li data-key="wm_2">Կատարում ենք սխալների շտկում և թարմացումներ</li>
+                    <li data-key="wm_3">Պաշտպանում ենք կայքը տեխնիկական խնդիրներից</li>
+                    <li data-key="wm_4">Աջակցում ենք և պահպանում ենք կայքի արագությունը</li>
+                </ul>
+                <button class="btn1" data-key="btn1">Դիմել</button>
+            </div>
+
+            <div class="service">
+                <h2 data-key="service_4">Կայքերի սպասարկում</h2>
+                <ul>
+                    <li data-key="os_1">Մենք արագացնում ենք կայքի աշխատանքը</li>
+                    <li data-key="os_2">Օպտիմիզացնում ենք կոդը և ռեսուրսները</li>
+                    <li data-key="os_3">Բարելավում ենք բեռնման արագությունը</li>
+                    <li data-key="os_4">Ապահովում ենք ավելի լավ օգտատիրոջ փորձ</li>
+                </ul>
+                <button class="btn1" data-key="btn1">Դիմել</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL  -->
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-box">
+
+            <span class="modal-close" id="closeModal">X</span>
+
+            <h2 data-key="h_2"></h2>
+
+            <input data-key-placeholder="input_1" type="text" placeholder="" required>
+            <input data-key-placeholder="input_2" type="text" placeholder="" required>
+            <textarea data-key-placeholder="input_3" placeholder=""></textarea>
+
+            <button data-key="h_b1" id="sendBtn">Ուղարկել</button>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <a class="phone" href="tel:+37441801308"> 📞 +374 41 801 308</a>
+            <div class="socials">
+                <a class="instabtn" href="https://www.instagram.com/haycode.am?igsh=MW91dm5kMDJ6MmoxNA=="
+                    target="_blank">
+                    <img src="../..//insta/instagram.png" alt="Instagram">
+                </a>
+                <a class="facebookbtn" href="#" target="_blank">
+                    <img src="../../insta/Facebook.png" alt="Facebook">
+                </a>
+                <a class="telegbtn" href="https://t.me/+37441801308" target="_blank">
+                    <img src="../../insta/Telegram.png" alt="Telegram">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 HayCode.am | Բոլոր իրավունքները պաշտպանված են</p>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

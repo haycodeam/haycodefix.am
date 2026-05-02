@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HayCode.am</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./weblogo/haycodeicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="logo"><img src="./weblogo/haycodeicon.png" alt="">HayCode<span>.am</span></div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" data-key="nav_home"></a></li>
+                    <li><a href="#about" data-key="nav_about"></a></li>
+                    <li><a href="./pages/services/index.html" data-key="nav_services"></a></li>
+                    <li><a href="./pages/coursies/index.html" data-key="nav_courses"></a></li>
+                    <li><a href="#contact" data-key="nav_contact"></a></li>
+                </ul>
+                <div class="lang-switch-mobile">
+                    <button data-lang="hy">🇦🇲</button>
+                    <button data-lang="ru">🇷🇺</button>
+                    <button data-lang="en">🇺🇸</button>
+                </div>
+            </nav>
+            <div class="lang-switch">
+                <button data-lang="hy">🇦🇲</button>
+                <button data-lang="ru">🇷🇺</button>
+                <button data-lang="en">🇺🇸</button>
+            </div>
+
+            <div class="menu-btn">☰</div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 data-key="hero_title"></h1>
+            <p data-key="hero_text"></p>
+            <a href="#contact" class="btn" data-key="hero_btn"></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-key="about_title"></h2>
+            <p data-key="about_text"></p>
+            <div class="about-box" data-key="about_box"></div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+
+        <!-- Swiper -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./gallery/nkar1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar6.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar5.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar7.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar8.png" alt=""></div>
+                <div class="swiper-slide"><img src="./gallery/nkar9.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 data-key="contact_title"></h2>
+        <div class="form_map">
+            <div class="container_input">
+                <form id="contactForm">
+                    <input type="text" name="name" data-key-placeholder="name" required>
+                    <input type="email" name="email" data-key-placeholder="email" required>
+                    <input type="phone" name="phone" data-key-placeholder="phone" required>
+                    <select name="purpose" data-key-placeholder="purpose" required>
+                        <option value="select" disabled selected data-key="select_purpose">Ընտրեք նպատակը</option>
+                        <option value="course" data-key="purpose_course">Դասընթաց</option>
+                        <option value="website" data-key="purpose_website">Վեբ-կայք</option>
+                    </select>
+
+                    <textarea name="message" rows="5" data-key-placeholder="message"></textarea>
+
+                    <button type="submit" class="btn" data-key="send_btn">Ուղարկել</button>
+                </form>
+            </div>
+
+            <iframe width="100%" height="428" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Qajaznuni%20street%203%20Yerevan+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <a class="mapmap" href='http://maps-generator.com/ru'>.</a>
+            <script type='text/javascript'
+                src='https://embedmaps.com/google-maps-authorization/script.js?id=28e7b1063136603a7bb939049256f00498f88518'></script>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <a class="phone" href="tel:+37441801308"> 📞 +374 41 801 308</a>
+            <div class="socials">
+                <a class="instabtn" href="https://www.instagram.com/haycode.am?igsh=MW91dm5kMDJ6MmoxNA=="
+                    target="_blank">
+                    <img src="./insta/instagram.png" alt="Instagram">
+                </a>
+                <a class="facebookbtn" href="#" target="_blank">
+                    <img src="./insta/Facebook.png" alt="Facebook">
+                </a>
+                <a class="telegbtn" href="https://t.me/+37441801308" target="_blank">
+                    <img src="./insta/Telegram.png" alt="Telegram">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 HayCode.am | Բոլոր իրավունքները պաշտպանված են</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
